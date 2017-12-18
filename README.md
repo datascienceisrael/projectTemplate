@@ -20,16 +20,15 @@ $ conda install cookiecutter
 ```
 
 
-### To start a new project, run:
-------------
+### To start a Data Science project:
 
-    cookiecutter https://github.com/
-
+```bash
+$ cookiecutter https://github.com/datascienceisrael/projectTemplate.git
+```
 
 ### The resulting directory structure
-------------
 
-The directory structure of your new project looks like this: 
+The new project will be structured like this: 
 
 ```
 │   README.md
@@ -54,15 +53,23 @@ The directory structure of your new project looks like this:
 |
 ```
 
-### Installing development requirements
-------------
+Two additional files are created in the new project:
 
-    pip install -r requirements.txt
+ + **requirements.txt**  
+ + **test_environment.py**
 
+The requirements file holds common data science python modules.
+Installation of these modules is done with:
 
-### testing environment
-------------
+```bash
+$ pip install -r requirements.txt
+```
 
-    python test_environment.py
+test_enviroment is used to make sure you are using the correct python version with  
+this project. 
+Run test with:
 
+```bash
+$ python test_environment.py
+```
 
