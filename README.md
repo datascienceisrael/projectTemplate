@@ -20,14 +20,16 @@ $ conda install cookiecutter
 ```
 
 
-### Start a new Data Science project:
-============
+### Starting a new Data Science project:
+-----------
+
+To generate a Data Science project template, in your bash, run:
 
 ```bash
 $ cookiecutter https://github.com/datascienceisrael/projectTemplate.git
 ```
 
-### The resulting directory structure
+#### Resulting directory structure
 
 The new project will be structured like this: 
 
@@ -73,4 +75,57 @@ Run test with:
 ```bash
 $ python test_environment.py
 ```
+
+
+### Github Integration
+
+**Every new project should be hosted on github *first*.**
+
+The first thing to do before executing _cookiecutter_ is to create a github repository to host the project.
+
+Once the repository is created on Github, select a working directory to store the project locally.
+For example:
+
+```bash
+$ cd myProjects
+```
+Then, use cookiecutter to generate the project template with:
+
+```bash
+$ cookiecutter https://github.com/datascienceisrael/projectTemplate.git
+```
+You will be prompted to enter 
+
+  + project_name    
+  + repo_name       (this is the name of the newly created directory)
+  + author
+  + description
+  + license 
+  
+Once done, you will see a new local directory *repo_name* with the appropriate files and folders.
+
+
+The next step is to integrate this folder with the remote Github repository.  
+
+Use this series of bash commands:
+
+```bash
+$ cd repo_name
+$ git init
+
+# Add the files in the local repository and stage them for commit
+$ git add . 
+
+# Commit the tracked changes and prepare them to be pushed to a remote repository
+$ git commit -m "Initial commit" 
+
+# track the new remote - the new repository you just hosted on Github
+$ git remote add origin remote repository URL 
+$ git push origin master
+```
+
+All done!
+
+You should have an updated repository on Github.
+
 
