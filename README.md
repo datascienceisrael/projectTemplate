@@ -5,7 +5,7 @@ _A minial and flexible project structure for data science projects._
 
 ### Requirements to use the cookiecutter template:
 -----------
- - Python 2.7 or 3.5
+ - Python (!)
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
 
 ``` bash
@@ -20,7 +20,8 @@ $ conda install cookiecutter
 ```
 
 
-### To start a Data Science project:
+### Start a new Data Science project:
+============
 
 ```bash
 $ cookiecutter https://github.com/datascienceisrael/projectTemplate.git
