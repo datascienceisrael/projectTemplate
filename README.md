@@ -3,7 +3,7 @@
 _A minial and flexible project structure for data science projects._
 
 
-Table of Contents
+### Table of Contents
 =================
 
  * [Requirements to use the cookiecutter template](#requirements-to-use-the-cookiecutter-template)
