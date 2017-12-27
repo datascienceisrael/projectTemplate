@@ -1,3 +1,5 @@
+## Python --------
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -47,9 +49,6 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-*.log
-
 # Sphinx documentation
 docs/_build/
 
@@ -71,3 +70,24 @@ target/
 
 # exclude data from source control by default
 /data/
+
+
+## R --------
+
+# project related configuration files
+Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# packrat directories, excluded by default
+# src files are OK to include for portability,although unnecessary
+packrat/lib*/
+
+.# html files are excluded by default
+*.html
+
+# logs
+*.log
+
