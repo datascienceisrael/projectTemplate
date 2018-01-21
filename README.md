@@ -228,7 +228,7 @@ $ git add .
 $ git commit -m "Initial commit" 
 
 # track the new remote - the new repository you just hosted on Github
-$ git remote add origin remote repository URL 
+$ git remote add origin remote_repository_URL 
 $ git push origin master
 ```
 
