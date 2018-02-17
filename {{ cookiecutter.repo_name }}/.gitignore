@@ -45,10 +45,6 @@ nosetests.xml
 coverage.xml
 *,cover
 
-# Translations
-*.mo
-*.pot
-
 # Sphinx documentation
 docs/_build/
 
@@ -91,3 +87,5 @@ packrat/lib*/
 # logs
 *.log
 
+# json files
+*.json
