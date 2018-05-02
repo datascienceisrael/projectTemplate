@@ -80,8 +80,9 @@ Rproj.user
 # packrat directories, excluded by default
 # src files are OK to include for portability,although unnecessary
 packrat/lib*/
+packrat/src/
 
-.# html files are excluded by default
+# html files are excluded by default
 *.html
 
 # logs
